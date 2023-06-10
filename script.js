@@ -28,21 +28,21 @@ var countdown = setInterval(function() {
   }
 }, 1000);
 
-// Handle comment submission
-document.getElementById("comment-form").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent form submission
+// // Handle comment submission
+// document.getElementById("comment-form").addEventListener("submit", function(event) {
+//   event.preventDefault(); // Prevent form submission
 
-  // Get the comment input value
-  var commentInput = document.getElementById("comment-input").value;
+//   // Get the comment input value
+//   var commentInput = document.getElementById("comment-input").value;
 
-  // Create a new list item to display the comment
-  var commentListItem = document.createElement("li");
-  commentListItem.classList.add("comment");
-  commentListItem.textContent = commentInput;
+//   // Create a new list item to display the comment
+//   var commentListItem = document.createElement("li");
+//   commentListItem.classList.add("comment");
+//   commentListItem.textContent = commentInput;
 
-  // Append the comment to the comments list
-  document.getElementById("comments-list").appendChild(commentListItem);
+//   // Append the comment to the comments list
+//   document.getElementById("comments-list").appendChild(commentListItem);
 
-  // Clear the comment input
-  document.getElementById("comment-input").value = "";
-});
+//   // Clear the comment input
+//   document.getElementById("comment-input").value = "";
+// });

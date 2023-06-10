@@ -47,6 +47,10 @@ p {
   color: #e31b6d;
 }
 
+img {
+  margin-top: 40px;
+}
+
 /* #comment-wall {
   margin-top: 50px;
 }

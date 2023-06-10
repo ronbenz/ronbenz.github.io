@@ -27,3 +27,22 @@ var countdown = setInterval(function() {
     document.getElementById("countdown").innerHTML = "Retirement time has arrived!";
   }
 }, 1000);
+
+// Handle comment submission
+document.getElementById("comment-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  // Get the comment input value
+  var commentInput = document.getElementById("comment-input").value;
+
+  // Create a new list item to display the comment
+  var commentListItem = document.createElement("li");
+  commentListItem.classList.add("comment");
+  commentListItem.textContent = commentInput;
+
+  // Append the comment to the comments list
+  document.getElementById("comments-list").appendChild(commentListItem);
+
+  // Clear the comment input
+  document.getElementById("comment-input").value = "";
+});
